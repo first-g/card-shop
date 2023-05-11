@@ -9,3 +9,32 @@
 .card-wrapper img{
     width: 100px;
 }
+
+
+.total {
+    margin-top: 20px;
+    margin-left: auto;
+    width: 280px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.total__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.total__block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.total__price{
+    font-size: 20px;
+}
