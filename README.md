@@ -1,1 +1,3 @@
-![Image alt](./public/assets/header.png)
+<p align="center">
+  <img src="./public/assets/header.png">
+</p>
