@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/card-shop/static/css/main.0252c820.css",
-    "main.js": "/card-shop/static/js/main.6b42e560.js",
+    "main.css": "/card-shop/static/css/main.dc9a901d.css",
+    "main.js": "/card-shop/static/js/main.e794b9ec.js",
+    "static/media/cola-bottle.png": "/card-shop/static/media/cola-bottle.88fe5e77493f25b8596f.png",
+    "static/media/pepsi-bottle.png": "/card-shop/static/media/pepsi-bottle.d2d19d879074b1541c8b.png",
     "index.html": "/card-shop/index.html",
-    "main.0252c820.css.map": "/card-shop/static/css/main.0252c820.css.map",
-    "main.6b42e560.js.map": "/card-shop/static/js/main.6b42e560.js.map"
+    "main.dc9a901d.css.map": "/card-shop/static/css/main.dc9a901d.css.map",
+    "main.e794b9ec.js.map": "/card-shop/static/js/main.e794b9ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.0252c820.css",
-    "static/js/main.6b42e560.js"
+    "static/css/main.dc9a901d.css",
+    "static/js/main.e794b9ec.js"
   ]
 }
