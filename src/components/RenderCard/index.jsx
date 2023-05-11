@@ -26,7 +26,7 @@ const RenderCard = () => {
                 <div className="description-section">
                     <h3>{item.title}</h3>
                     <p>{item.capacity}</p>
-                    <p></p>
+                    <div className="cube"> <p className='circle'></p></div>
                 </div>
                 <div className="counter-section">
                     <button onClick={() => incrementCount(index)}>+</button>
@@ -35,9 +35,9 @@ const RenderCard = () => {
                 </div>
                 <div className="price-section">
                     <p>{item.price}$</p>
-                    <span>Save for later</span>
+                    <span className='save'>Save for later</span>
                     <br />
-                    <span>Remove</span>
+                    <span className='remove'>Remove</span>
                 </div>
             </div>
         )
