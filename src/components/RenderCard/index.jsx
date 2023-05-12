@@ -41,7 +41,7 @@ const RenderCard = ({items, setItems}) => {
                     <p>{item.price}$</p>
                     <span className='save'>Save for later</span>
                     <br />
-                    <span className='remove' onClick={() => remove(item.id)}>Remove</span>
+                    <button className='remove' onClick={() => remove(item.id)}>Remove</button>
                 </div>
             </div>
         )

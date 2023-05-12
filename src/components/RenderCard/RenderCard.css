@@ -66,6 +66,7 @@
 }
 
 .remove {
+    background-color: transparent;
     font-size: 10px;
     color:  red;
     text-decoration: underline;
