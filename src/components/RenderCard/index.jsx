@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './RenderCard.css'
 import { dataProduct } from '../../data/data';
 
-const RenderCard = () => {
+const RenderCard = ({items, setItems}) => {
     let [counts, setCounts] = useState(dataProduct.map(() => 0));
 
     const incrementCount = (index) => {
@@ -19,7 +19,11 @@ const RenderCard = () => {
         }
     }
 
-    let product = dataProduct.map((item, index) => {
+    const remove = (id) => {
+        setItems(items.filter((i) => i.id !== id))
+    }
+
+    let product = items.map((item, index) => {
         return (
             <div className='card-wrapper' key={item.id}>
                 <img src={item.img} alt="tovar" />
@@ -37,7 +41,7 @@ const RenderCard = () => {
                     <p>{item.price}$</p>
                     <span>Save for later</span>
                     <br />
-                    <span>Remove</span>
+                    <span onClick={() => remove(item.id)}>Remove</span>
                 </div>
             </div>
         )
