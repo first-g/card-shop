@@ -23,6 +23,13 @@ const RenderCard = ({items, setItems}) => {
         setItems(items.filter((i) => i.id !== id))
     }
 
+    const totalPrice = items.reduce((acc, item, index) => {
+        return acc + item.price * counts[index]
+    }, 0)
+    const totalItems = items.reduce((acc, item, index) => {
+        return acc + counts[index]
+    }, 0)
+
     let product = items.map((item, index) => {
         return (
             <div className='card-wrapper' key={item.id}>
@@ -54,11 +61,11 @@ const RenderCard = ({items, setItems}) => {
                     <div className="total__block">
                         <div>
                             <h3>Sub-Total</h3>
-                            <p>{1} items</p>
+                            <p>{totalItems} items</p>
                         </div>
-                        <h2 className='total__price'>6$</h2>
+                        <h2 className='total__price'>${totalPrice.toFixed(2)}</h2>
                     </div>
-                    <button>Checkout</button>
+                    <button onClick={() => alert(`Вы купили ${totalItems} газировок на сумму ${totalPrice.toFixed(2)}$`)}>Checkout</button>
                 </div>
             </div>
         </>
