@@ -30,7 +30,7 @@ const RenderCard = ({items, setItems}) => {
                 <div className="description-section">
                     <h3>{item.title}</h3>
                     <p>{item.capacity}</p>
-                    <p></p>
+                    <div className="cube"> <p className='circle'></p></div>
                 </div>
                 <div className="counter-section">
                     <button onClick={() => incrementCount(index)}>+</button>
@@ -39,9 +39,9 @@ const RenderCard = ({items, setItems}) => {
                 </div>
                 <div className="price-section">
                     <p>{item.price}$</p>
-                    <span>Save for later</span>
+                    <span className='save'>Save for later</span>
                     <br />
-                    <span onClick={() => remove(item.id)}>Remove</span>
+                    <span className='remove' onClick={() => remove(item.id)}>Remove</span>
                 </div>
             </div>
         )
