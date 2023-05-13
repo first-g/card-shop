@@ -40,9 +40,9 @@ const RenderCard = ({items, setItems}) => {
                     <div className="cube"> <p className='circle'></p></div>
                 </div>
                 <div className="counter-section">
-                    <button onClick={() => incrementCount(index)}>+</button>
+                    <button className="tunuk" onClick={() => incrementCount(index)}>+</button>
                     <span>{counts[index]}</span>
-                    <button onClick={() => decrementCount(index)}>-</button>
+                    <button className="tunuk" onClick={() => decrementCount(index)}>-</button>
                 </div>
                 <div className="price-section">
                     <p>{item.price}$</p>
@@ -65,7 +65,7 @@ const RenderCard = ({items, setItems}) => {
                         </div>
                         <h2 className='total__price'>${totalPrice.toFixed(2)}</h2>
                     </div>
-                    <button onClick={() => alert(`Вы купили ${totalItems} газировок на сумму ${totalPrice.toFixed(2)}$`)}>Checkout</button>
+                    <button className="check" onClick={() => alert(`Вы купили ${totalItems} газировок на сумму ${totalPrice.toFixed(2)}$`)}>Checkout</button>
                 </div>
             </div>
         </>
